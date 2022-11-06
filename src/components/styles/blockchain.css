@@ -1,19 +1,98 @@
 .block{
     width: 100vw;
     height: 75rem;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
   
 }
 .bleft{
-    flex:0.813;
+    width: 56.5rem;
     background-color:rgb(81, 87, 172);
     display: flex;
     flex-direction: column;
+}
+.dwnloads2{
+   
+    margin: auto;
+    /* margin-top: 80rem;  */
+    margin-right: -5rem;
+    /* background-color: aqua; */
+    z-index: 60;
+    width: 20rem;
+    margin-top: -3rem;
+}
+.downtext2{
+    font-size: 4rem;
+    text-align: end;
+    color: white;
+}
+.down2{
+    color: white;
+    font-size: 2rem;
+    text-align: end;
+   
+}
+.dow{
+    text-align: left;
+    margin-left: 1rem;
+}
+.entertext2{
+    margin-top: 65rem;
+    margin-left: 7rem;
+    /* background-color: antiquewhite; */
+    color: white;
+    width: 27rem;
+    margin-bottom: 10rem;
+}
+.enter2{
+    width: 27rem;
+    
+    
+}
+.abc2{
+    font-size: 4rem;
+    margin-top: 2rem;
+
+
+}
+.para2{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.foot2{
+    margin-top: 4rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+.arrow{
+    margin-top:1rem ;
+    margin-left: 2rem;
 }
 .bright{
     flex: 1.17;
     height: 100%;
     background-color: rgb(45, 43, 141);
+    z-index: -2;
     display: flex;
+}
+.blockimg{
+    width: 25rem;
+    height: 40rem;
+    margin-left: 15rem;
+    margin-top: 50rem;
+    z-index: -1;
+    visibility: hidden;
+    transition: all ease;
+}
+.pic{
+    width: 25rem;
+    height: 40rem;
+    margin-left: 10rem;
+    margin-top: -30rem;
+    visibility: hidden;
+    transition: all ease;
+    /* margin-left:e 30rem; */
+
+
 }

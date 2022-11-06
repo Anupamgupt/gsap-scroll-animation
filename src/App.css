@@ -5,3 +5,11 @@
     position: fixed;
     left: 50%;
 }
+html { /* body won't work ¯\_(ツ)_/¯ */
+    scroll-snap-type: y mandatory;
+    /* scroll-snap-points-y: repeat(300px); */
+  }
+section{
+    scroll-snap-align: center;
+    /* height: 100vh; */
+}

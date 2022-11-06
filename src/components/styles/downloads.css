@@ -1,6 +1,6 @@
 .download{
     width: 100%;
-    height: 75rem;
+    height: 70rem;
     
      display: flex;
    
@@ -12,7 +12,7 @@
     flex-direction: column;
 }
 .dwnloads{
-    margin-top: 20rem;
+    /* margin-top: 20rem; */
     margin-right: -10rem;
     /* background-color: aqua; */
     z-index: 60;
@@ -35,7 +35,7 @@
    
 }
 .ldimg{
-    margin-top: 12rem;
+    margin-top: 24rem;
     margin-left: 10rem;
     width: 30rem;
     height: 5rem;
@@ -45,7 +45,7 @@
     /* height: 100%; */
 }
 .rdimg{
-    margin-top: 12rem;
+    /* margin-top: 12rem; */
     margin-left: -5rem;
     width: 30rem;
     height: 5rem;
@@ -54,8 +54,7 @@
     width: 100%;
 }
 .entertext{
-    margin-top: 10rem;
-    margin-left: 7rem;
+    margin-top: 30rem;
     /* background-color: antiquewhite; */
     color: white;
     width: 27rem;

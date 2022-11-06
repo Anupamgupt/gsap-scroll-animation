@@ -1,7 +1,7 @@
 .nasa{
     width: 100vw;
     height: 75rem;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
   
 }
@@ -17,4 +17,38 @@
     height: 100%;
     background-color:#0a1e49;
     display: flex;
+    z-index: -2;
+}
+.nasa1{
+    width: 20rem;
+}
+.dwnloads8{
+   
+    margin: auto;
+    margin-top: -5rem; 
+    margin-right: -5rem;
+    /* background-color: aqua; */
+    z-index: 60;
+    color: white;
+    /* width: 20rem; */
+}
+.downtext3{
+    font-size: 5rem;
+}
+.nas1{
+    width: 20rem;
+    height: 40rem;
+    margin-top: 30rem;
+    margin-left: 20rem;
+}
+.nas2{
+    width: 25rem;
+    height: 40rem;
+    margin-top: -8rem;
+    object-fit: cover;
+    z-index: -1;
+
+}
+.entertext8{
+    color: white;
 }

@@ -35,7 +35,7 @@ function App() {
           trigger: element.querySelector(".one"),
           start: "top 0%",
           end: "bottom center",
-          toggleActions:"restart complete reverse reset"
+          toggleActions:"restart complete reverse reset "
         },
       }
     );
@@ -197,6 +197,40 @@ function App() {
       }
     );
   }, []);
+  useEffect(() => {
+    const element = ref.current;
+    // setn(3);
+    gsap.fromTo(
+      element.querySelector(".one"),
+
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 0.9,
+        // y: "12rem",        
+      }
+      
+    );
+  }, []);
+  useEffect(() => {
+    const element = ref.current;
+    // setn(3);
+    gsap.fromTo(
+      element.querySelector(".one2"),
+
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 1,
+        // y: "12rem",        
+      },
+      
+    );
+  }, []);
 
   return (
     <>
@@ -213,32 +247,32 @@ function App() {
         </div>
         
         {/* <Icon2 width="20px"/> */}
-        <div className="main">
-              <section className="two">
+            <div className="main">
+              <section className="two sect">
                 <Downloads id="h1" />
               </section>
-              <section className="three">
+              <section className="three sect">
                 <Blockchain id="block" />
               </section>
-              <section className="four">
+              <section className="four sect">
                 <UxStrategy id="h6" />  
                 
               </section>
               
-              <section className="five">
+              <section className="five sect">
                 <TextheadlineFooter id="h4" /> 
               </section>
-              <section className="six">
+              <section className="six sect">
                 <TextheadlineIndustry id="h5" />
               </section>
-              <section className="seven">
+              <section className="seven sect">
                 <Eastasia id="h2" />  
               </section>
 
-              <section className="eight">
+              <section className="eight sect">
                 <Nasa className="h3" />
               </section>
-          </div>
+            </div>
        
       </div>
     </>
