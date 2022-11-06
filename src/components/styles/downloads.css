@@ -1,0 +1,92 @@
+.download{
+    width: 100%;
+    height: 75rem;
+    
+     display: flex;
+   
+}
+.dleft{
+    flex:0.83;
+    background-color: rgb(89, 31, 143);
+    display: flex;
+    flex-direction: column;
+}
+.dwnloads{
+    margin-top: 20rem;
+    margin-right: -10rem;
+    /* background-color: aqua; */
+    z-index: 60;
+}
+.downtext{
+    font-size: 4rem;
+    text-align: end;
+    color: white;
+}
+.down{
+    color: white;
+    font-size: 2rem;
+    text-align: end;
+}
+.dright{
+    flex: 1.17;
+    height: 100%;
+    background-color: rgb(231, 235, 238);
+    display: flex;
+   
+}
+.ldimg{
+    margin-top: 12rem;
+    margin-left: 10rem;
+    width: 30rem;
+    height: 5rem;
+}
+.dil{
+    width: 100%;
+    /* height: 100%; */
+}
+.rdimg{
+    margin-top: 12rem;
+    margin-left: -5rem;
+    width: 30rem;
+    height: 5rem;
+}
+.tv{
+    width: 100%;
+}
+.entertext{
+    margin-top: 10rem;
+    margin-left: 7rem;
+    /* background-color: antiquewhite; */
+    color: white;
+    width: 27rem;
+}
+.enter{
+    width: 27rem;
+    
+}
+.abc{
+    font-size: 4rem;
+    margin-top: 2rem;
+
+
+}
+.para{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.foot{
+    margin-top: 4rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+.arrow{
+    margin-top:1rem ;
+    margin-left: 2rem;
+}
+@media screen and ( max-width:1080px){
+    .rdimg{
+        margin-left: -5rem;
+    }
+}
+

@@ -1,0 +1,19 @@
+.text2{
+    width: 100vw;
+    height: 75rem;
+    background-color: aqua;
+    display: flex;
+  
+}
+.tleft2{
+    flex:0.813;
+    background-color:rgb(43, 49, 138);
+    display: flex;
+    flex-direction: column;
+}
+.tright2{
+    flex: 1.17;
+    height: 100%;
+    background-color: cyan;
+    display: flex;
+}
