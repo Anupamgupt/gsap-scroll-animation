@@ -27,11 +27,10 @@ function TextheadlineFooter() {
         ease:'ease',
         y:'-25rem',
         scrollTrigger: {
-          trigger: element.querySelector(".tright"),
           start: "top 0%",
           end: "bottom center",
           
-          // toggleActions:"restart complete reverse reset"
+          toggleActions:"restart complete reverse reset"
         },
       }
     );
@@ -56,7 +55,7 @@ function TextheadlineFooter() {
           start: "top 0%",
           end: "bottom center",
           
-          // toggleActions:"restart complete reverse reset"
+          toggleActions:"restart complete reverse reset"
         },
       }
     );
@@ -84,9 +83,32 @@ function TextheadlineFooter() {
           start: "top 0%",
           end: "bottom center",
           
-          // toggleActions:"restart complete reverse reset"
+          toggleActions:"restart complete reverse reset"
         },
       }
+    );
+  }, []);
+  useEffect(() => {
+    const element = ref.current;
+    // setn(3);
+    gsap.fromTo(
+      element.querySelector(".tright"),
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration:0.5,
+        
+        scrollTrigger: {
+          trigger: element.querySelector(".tright"),
+          start: "top 0%",
+          end: "bottom center",
+          
+          toggleActions:"restart complete reverse reset"
+      }
+      }
+      
     );
   }, []);
   return (

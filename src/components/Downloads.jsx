@@ -91,6 +91,22 @@ function Downloads() {
       
     );
   }, []);
+  useEffect(() => {
+    const element = ref.current;
+    // setn(3);
+    gsap.fromTo(
+      element.querySelector(".dleft"),
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration:0.5,
+            
+      }
+      
+    );
+  }, []);
  
 
 

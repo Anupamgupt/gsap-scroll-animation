@@ -179,6 +179,30 @@ function UxStrategy() {
       }
     );
   }, []);
+  useEffect(() => {
+    const element = ref.current;
+    // setn(3);
+    gsap.fromTo(
+      element.querySelector(".uright"),
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration:0.5,
+        ease:'ease',
+        
+        scrollTrigger: {
+          trigger: element.querySelector(".uright"),
+          start: "top 0%",
+          end: "bottom center",
+          
+          toggleActions:"restart complete reverse reset"
+      }
+      }
+      
+    );
+  }, []);
   return (
     <div className='ux' ref={ref}>
        <div className='uleft'>

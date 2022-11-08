@@ -7,9 +7,13 @@
 }
 html { /* body won't work ¯\_(ツ)_/¯ */
     scroll-snap-type: y mandatory;
+    /* scroll-behavior:inherit;  */
+    /* scroll-behavior: smooth; */
+    /* scroll-padding-block-end:30%; */
     /* scroll-snap-points-y: repeat(300px); */
   }
 section{
-    scroll-snap-align: center;
-    /* height: 100vh; */
+    /* scroll-behavior: smooth; */
+    scroll-snap-align:center;
+   
 }

@@ -28,7 +28,7 @@ function TextheadlineIndustry() {
           start: "top 0%",
           end: "bottom center",
           
-          // toggleActions:"restart complete reverse reset"
+          toggleActions:"restart complete reverse reset"
         },
       }
     );
@@ -53,7 +53,7 @@ function TextheadlineIndustry() {
           start: "top 0%",
           end: "bottom center",
           
-          // toggleActions:"restart complete reverse reset"
+          toggleActions:"restart complete reverse reset"
         },
       }
     );
@@ -79,7 +79,7 @@ function TextheadlineIndustry() {
           start: "top 0%",
           end: "bottom center",
           
-          // toggleActions:"restart complete reverse reset"
+          toggleActions:"restart complete reverse reset"
         },
       }
     );
@@ -104,7 +104,7 @@ function TextheadlineIndustry() {
     </div>
     <div className='tright2'>
         <img src={th} className='th'/>
-        <img src ={interior} className='inter' />
+        {/* <img src ={interior} className='inter' /> */}
     </div>
  </div>
   )

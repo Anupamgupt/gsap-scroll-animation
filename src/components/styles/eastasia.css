@@ -1,12 +1,15 @@
 .east{
     width: 100vw;
-    height: 75rem;
+    height: 110vh;
     /* background-color: aqua; */
+
+    overflow: hidden;
     display: flex;
   
 }
 .eleft{
-    flex:0.813;
+    /* flex:0.813; */
+    min-width: 41%;
     background-color:rgba(4, 129, 71);
     display: flex;
     flex-direction: column;

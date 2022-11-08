@@ -1,12 +1,13 @@
 .download{
-    width: 100%;
-    height: 70rem;
-    
+    width: 100vw;
+    height: 110vh;
+    overflow: hidden;
      display: flex;
    
 }
 .dleft{
-    flex:0.83;
+    /* flex:0.83; */
+    min-width: 41%;
     background-color: rgb(89, 31, 143);
     display: flex;
     flex-direction: column;

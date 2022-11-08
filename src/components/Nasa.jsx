@@ -29,7 +29,7 @@ function Nasa() {
           start: "top 0%",
           end: "bottom center",
           
-          // toggleActions:"restart complete reverse reset"
+          toggleActions:"restart complete reverse reset"
         },
       }
     );
@@ -55,7 +55,7 @@ function Nasa() {
           start: "top 0%",
           end: "bottom center",
           
-          // toggleActions:"restart complete reverse reset"
+          toggleActions:"restart complete reverse reset"
         },
       }
     );
@@ -80,7 +80,7 @@ function Nasa() {
           start: "top 0%",
           end: "bottom center",
           
-          // toggleActions:"restart complete reverse reset"
+          toggleActions:"restart complete reverse reset"
         },
       }
     );
@@ -105,12 +105,35 @@ function Nasa() {
           start: "top 0%",
           end: "bottom center",
           
-          // toggleActions:"restart complete reverse reset"
+          toggleActions:"restart complete reverse reset"
         },
       }
     );
   }, []);
-  
+  useEffect(() => {
+    const element = ref.current;
+    // setn(3);
+    gsap.fromTo(
+      element.querySelector(".nright"),
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration:0.5,
+        ease:'ease',
+        
+        scrollTrigger: {
+          trigger: element.querySelector(".nright"),
+          start: "top 0%",
+          end: "bottom center",
+          
+          toggleActions:"restart complete reverse reset"
+      }
+      }
+      
+    );
+  }, []);
 
   return (
     <div className='nasa' ref={ref}>

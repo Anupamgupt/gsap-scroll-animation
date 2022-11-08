@@ -15,20 +15,20 @@ function Eastasia() {
     gsap.fromTo(
       element.querySelector(".dwnloads7"),
       {
-        visibility:'hidden',
+        opacity:0,
         // y:80,
         
       },
       {
-        visibility:'visible',
+        opacity:1,
         duration: 0.7 ,
         ease:'ease',
         y:'20rem',
         scrollTrigger: {
-          trigger: element.querySelector(".eright"),
           start: "top 0%",
           end: "bottom center",
-          // toggleActions:"restart complete reverse reset"
+          
+          toggleActions:"restart complete reverse reset"
         },
       }
     );
@@ -52,7 +52,8 @@ function Eastasia() {
           trigger: element.querySelector(".eright"),
           start: "top 0%",
           end: "bottom center",
-          // toggleActions:"restart complete reverse reset"
+          
+          toggleActions:"restart complete reverse reset"
         },
       }
     );
@@ -76,7 +77,8 @@ function Eastasia() {
           trigger: element.querySelector(".eright"),
           start: "top 0%",
           end: "bottom center",
-          // toggleActions:"restart complete reverse reset"
+          
+          toggleActions:"restart complete reverse reset"
         },
       }
     );
@@ -100,9 +102,34 @@ function Eastasia() {
           trigger: element.querySelector(".eright"),
           start: "top 0%",
           end: "bottom center",
-          // toggleActions:"restart complete reverse reset"
+          
+          toggleActions:"restart complete reverse reset"
         },
       }
+    );
+  }, []);
+  useEffect(() => {
+    const element = ref.current;
+    // setn(3);
+    gsap.fromTo(
+      element.querySelector(".eright"),
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration:0.5,
+        ease:'ease',
+        
+        scrollTrigger: {
+          trigger: element.querySelector(".eright"),
+          start: "top 0%",
+          end: "bottom center",
+          
+          toggleActions:"restart complete reverse reset"
+      }
+      }
+      
     );
   }, []);
   return (

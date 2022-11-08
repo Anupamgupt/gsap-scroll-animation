@@ -55,7 +55,7 @@ function Blockchain() {
           start: "top 0%",
           end: "bottom center",
           
-          // toggleActions:"restart complete reverse reset"
+          toggleActions:"restart complete reverse reset"
         },
       }
     );
@@ -79,7 +79,7 @@ function Blockchain() {
           start: "top 0%",
           end: "bottom center",
           
-          // toggleActions:"restart complete reverse reset"
+          toggleActions:"restart complete reverse reset"
         },
       }
     );
@@ -103,7 +103,7 @@ function Blockchain() {
           start: "top 0%",
           end: "bottom center",
           
-          // toggleActions:"restart complete reverse reset"
+          toggleActions:"restart complete reverse reset"
         },
       }
     );
@@ -127,11 +127,12 @@ function Blockchain() {
           start: "top 0%",
           end: "bottom center",
           
-          // toggleActions:"restart complete reverse reset"
+          toggleActions:"restart complete reverse reset"
         },
       }
     );
   }, []);
+ 
   return (
     <div className='block' ref={ref}>
       <div className='bleft'>

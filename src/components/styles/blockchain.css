@@ -1,12 +1,14 @@
 .block{
     width: 100vw;
-    height: 75rem;
+    height: 110vh;
     /* background-color: aqua; */
     display: flex;
+    overflow: hidden;
   
 }
 .bleft{
-    width: 56.5rem;
+    /* width: 56.5rem; */
+    min-width: 41%;
     background-color:rgb(81, 87, 172);
     display: flex;
     flex-direction: column;

@@ -15,12 +15,39 @@ import Icon2 from "./components/pathsvg2";
 
 function App() {
   gsap.registerPlugin(ScrollTrigger);
-
+  const myarray=["10,1000","130,1000","290,1000","420,1000","550,1000","690,1000","1000,1000"]
+  const back=['rgb(89, 31, 143)','rgb(81, 87, 172)','#243558','rgb(31, 44, 223)','rgb(43, 49, 138)','rgba(4, 129, 71)','#121c31']
+  
   const ref = useRef(null);
 
+  useEffect(() => { 
+    const sections = gsap.utils.toArray("section")
+    gsap.defaults({ overwrite: "auto", duration: 0.3 });
+    gsap.set("body", { height: sections.length * 100 + "%" })
+    myarray.forEach((myarr,i)=>{
+        const element = ref.current;
+        // setn(3);
+        gsap.fromTo(
+          element.querySelector(".one"),
+          {
+            duration: 0,
+          },
+          {
+            duration: 1.2,
+            backgroundColor:back[i],
+            strokeDasharray: myarr,
+            scrollTrigger: {
+              trigger: sections[i],
+              start: "10% 107%",
+              end: "10% 10%",
+              toggleActions:"restart complete reverse reset "
+            },
+          }
+        );
+    }, []);
+    })
   useEffect(() => {
     const element = ref.current;
-    // setn(3);
     gsap.fromTo(
       element.querySelector(".one"),
       {
@@ -29,7 +56,6 @@ function App() {
       },
       {
         duration: 1,
-        
         strokeDasharray: "0,1000",
         scrollTrigger: {
           trigger: element.querySelector(".one"),
@@ -40,193 +66,30 @@ function App() {
       }
     );
   }, []);
+  
   useEffect(() => {
     const element = ref.current;
-   
     gsap.fromTo(
       element.querySelector(".one"),
-      {
-        duration: 1,
-      },
-      {
-        duration: 1,
-        backgroundColor:'rgb(81, 87, 172)',
-        strokeDasharray: "10,1000",
-        scrollTrigger: {
-          trigger: element.querySelector(".two"),
-          start: "top 0%",
-          end: "bottom center",
-          // markers:true,
-          toggleActions:"restart complete reverse reset"
-        },
-      }
-    );
-  }, []);
-  useEffect(() => {
-    const element = ref.current;
-   
-    gsap.fromTo(
-      element.querySelector(".one"),
-      {
-        duration: 1,
-        
-      },
-      {
-        duration: 1,
-        backgroundColor:'rgb(81, 87, 172)',
-        strokeDasharray: "130,1000",
-        scrollTrigger: {
-          trigger: element.querySelector(".three"),
-          start: "top 100%",
-          end: "bottom center",
-          // markers:true,
-          toggleActions:"restart complete reverse reset"
-        },
-      }
-    );
-  }, []);
-  useEffect(() => {
-    const element = ref.current;
-    console.log("hello");
-    gsap.fromTo(
-      element.querySelector(".one"),
-      {
-        duration: 1,
-       
-      },
-      {
-        // duration:2,
-        duration: 1,
-        backgroundColor:'#243558',
-        strokeDasharray: "290,1000",
-        scrollTrigger: {
-          trigger: element.querySelector(".four"),
-          start: "0% 30%",
-          end: "bottom center",
-          toggleActions:"restart complete reverse reset"
-        },
-      }
-    );
-  }, []);
-  useEffect(() => {
-    const element = ref.current;
-    console.log("hello");
-    gsap.fromTo(
-      element.querySelector(".one"),
-      {
-        duration: 1,
-      },
-      {
-        // duration:2,
-        duration: 1,
-        backgroundColor:'rgb(31, 44, 223)',
-        strokeDasharray: "420,1000",
-        scrollTrigger: {
-          trigger: element.querySelector(".five"),
-          start: "0% 30%",
-          end: "bottom center",
-          toggleActions:"restart complete reverse reset"
-        },
-      }
-    );
-  }, []);
-  useEffect(() => {
-    const element = ref.current;
-    console.log("hello");
-    gsap.fromTo(
-      element.querySelector(".one"),
-      {
-        duration: 1,
-      },
-      {
-        // duration:2,
-        backgroundColor:'rgb(43, 49, 138)',
-        duration: 1,
-        strokeDasharray: "550,1000",
-        scrollTrigger: {
-          trigger: element.querySelector(".six"),
-          start: "0% 30%",
-          end: "bottom center",
-          toggleActions:"restart complete reverse reset"
-        },
-      }
-    );
-  }, []);
-  useEffect(() => {
-    const element = ref.current;
-    console.log("hello");
-    gsap.fromTo(
-      element.querySelector(".one"),
-      {
-        duration: 1,
-      },
-      {
-        // duration:2,
-       backgroundColor:'rgba(4, 129, 71, )',
-        duration: 1,
-        strokeDasharray: "690,1000",
-        scrollTrigger: {
-          trigger: element.querySelector(".seven"),
-          start: "0% 30%",
-          end: "bottom top",
-          toggleActions:"restart complete reverse reset"
-        },
-      }
-    );
-  }, []);
-  useEffect(() => {
-    const element = ref.current;
-    
-    gsap.fromTo(
-      element.querySelector(".one"),
-      {
-        duration: 1,
-      },
-      {
-        // duration:2,
-        ease:'ease',
-        backgroundColor:'#121c31',
-        duration: 1,
-        strokeDasharray: "1000,1000",
-        scrollTrigger: {
-          trigger: element.querySelector(".eight"),
-          start: "top top",
-          end: "bottom center",
-          toggleActions:"restart complete reverse reset"
-        },
-      }
-    );
-  }, []);
-  useEffect(() => {
-    const element = ref.current;
-    // setn(3);
-    gsap.fromTo(
-      element.querySelector(".one"),
-
       {
         opacity: 0,
       },
       {
         opacity: 1,
-        duration: 0.9,
-        // y: "12rem",        
-      }
-      
+        duration: 0.9,    
+      } 
     );
   }, []);
   useEffect(() => {
     const element = ref.current;
-    // setn(3);
     gsap.fromTo(
       element.querySelector(".one2"),
-
       {
         opacity: 0,
       },
       {
         opacity: 1,
-        duration: 1,
-        // y: "12rem",        
+        duration: 1,      
       },
       
     );
@@ -252,10 +115,10 @@ function App() {
                 <Downloads id="h1" />
               </section>
               <section className="three sect">
-                <Blockchain id="block" />
+                <Blockchain id="h2" />
               </section>
               <section className="four sect">
-                <UxStrategy id="h6" />  
+                <UxStrategy id="h3" />  
                 
               </section>
               
@@ -266,11 +129,11 @@ function App() {
                 <TextheadlineIndustry id="h5" />
               </section>
               <section className="seven sect">
-                <Eastasia id="h2" />  
+                <Eastasia id="h6" />  
               </section>
 
               <section className="eight sect">
-                <Nasa className="h3" />
+                <Nasa className="h7" />
               </section>
             </div>
        
